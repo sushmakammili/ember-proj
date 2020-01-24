@@ -1,0 +1,17 @@
+<h2><em>Reach Our agents so that they can help you!</em></h2>
+
+<div class="card">
+  <div class="card-header">
+    Our Agents
+  </div>
+  
+
+{{#each @model as |agent|}}
+   <div class="list-group list-group-flush">
+       <div class="list-group-item">
+           {{agent.agentname}} - {{agent.branch}}
+       </div>
+   </div>
+{{/each}}
+
+</div>
